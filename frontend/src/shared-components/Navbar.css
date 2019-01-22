@@ -1,0 +1,49 @@
+nav.navbar, .navbar-default {
+  background-color: #232323 !important;
+}
+.navbar-nav{
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.container{
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 100%;
+}
+
+.company-name{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.navbar-header {
+    width: 20%
+}
+
+.navbar-brand>img {
+  width: 75%;
+}
+
+.navitem{
+    margin: 0px 15px;
+}
+
+.navbar-default {
+  background-image: none;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #bcbcbc !important;
+}
+
+.navbar-brand {
+  color: #025253 !important;
+}
+
+.navbar-brand{
+    display: table;
+}

@@ -1,0 +1,36 @@
+/* .Form{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #025253;
+}
+
+.contact-form-title{
+    margin-bottom: 10%;
+    color: #bcbcbc;
+    margin: 0 auto;
+    width: 50%;
+}
+
+a {
+    color: inherit;
+}
+
+.Form.mk{
+    height: 100vh;
+}
+
+.informacion {
+    padding-top: 10%;  
+    width: 65%;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0px;
+} */
+
+.form {
+    display: block;
+    margin: auto;
+}
