@@ -87,7 +87,6 @@ Los servicios ofrecidos incluyen: <br></br><br></br>
             &#9679; Control de avances físicos de obra para certificación mensual.<br></br>
             &#9679; Coordinación de trabajos con propietarios.<br></br>
             &#9679; Control de personal en obra, planillas de BPS.<br></br>
-            &#9679; Presencia medio horario de un Arquitecto en obra.<br></br>
             &#9679;  Control de seguridad en obra, seguimiento de solicitudes 
                  del prevencionista de obra.<br></br> 
             </Typography>

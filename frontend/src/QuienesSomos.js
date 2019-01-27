@@ -62,14 +62,14 @@ const leftStyle = theme => ({
     const { classes } = props;
     return (
       <div className="information">     
-        <Jumbotron title="Quiénes Somos?" description="MK es una empresa que brinda servicios de gerenciamiento de obra. Una de las dudas que surge frente al gerenciador de una obra es cuáles son sus tareas y el alcance de esta denominación tan amplia, para que se pueda entender el alcance detallamos algunos de los servicios que brindamos:"></Jumbotron>
+        <Jumbotron title="Quiénes Somos?" description="MK es una empresa que brinda servicios de gerenciamiento de obra. Una de las dudas que surge frente al gerenciador de una obra es cuáles son sus tareas y el alcance de esta denominación tan amplia. Para que se pueda entender el alcance detallamos algunos de los servicios que brindamos:"></Jumbotron>
         <Columns columns={2}>
             <Paper className={classes.left} elevation={1}>
             <Typography variant="h5" component="h3">
             Definición y presentación del proyecto:
             </Typography>
             <Typography component="p">
-                El Gerente de proyecto, no es alguien que llegue a última hora a tomar decisiones. No, su papel en el proyecto viene de más atrás, con la definición del mismo y la presentación de sus etapas y plazos a los clientes. Además, será una especie de intermediario entre éstos y el equipo de trabajo que ejecuta las tareas de proyecto tanto de arquitectura como de instalaciones.
+                El Gerente de proyecto, no es alguien que llegue a última hora a tomar decisiones. Su papel en el proyecto viene de más atrás, con la definición del mismo y la presentación de sus etapas y plazos a los clientes. Además, será una especie de intermediario entre éstos y el equipo de trabajo que ejecuta las tareas de proyecto tanto de arquitectura como de instalaciones.
             </Typography>
             </Paper>
 
