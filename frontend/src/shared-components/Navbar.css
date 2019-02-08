@@ -1,16 +1,16 @@
 nav.navbar, .navbar-default {
-  background-color: #232323 !important;
+  background-color: #ffffff !important;
 }
 .navbar-nav{
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    margin-left: 25%;
 }
 
 .container{
-  margin-left: 0px;
-  margin-right: 0px;
-  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .company-name{
@@ -26,6 +26,21 @@ nav.navbar, .navbar-default {
   width: 75%;
 }
 
+.pages {
+  display: block;
+  margin: auto;
+}
+
+.logo {
+  display: block;
+  width: 55px;
+}
+
+.image{
+  max-width: 5%;
+  max-height: 5%;
+}
+
 .navitem{
     margin: 0px 15px;
 }
@@ -37,7 +52,7 @@ nav.navbar, .navbar-default {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #bcbcbc !important;
+  color: #232323!important;
 }
 
 .navbar-brand {

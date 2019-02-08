@@ -1,30 +1,59 @@
-import React, { Component } from 'react';
-
-import PropTypes from 'prop-types';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
+import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import Jumbotron from './shared-components/Jumbotron';
+import Bottom from './shared-components/Bottom';
 
-const styles = theme => ({
+import './index.css';
+
+const ExpansionPanel = withStyles({
   root: {
-    width: '100%',
+    border: '1px solid rgba(0,0,0,.125)',
+    boxShadow: 'none',
+    '&:not(:last-child)': {
+      borderBottom: 0,
+    },
+    '&:before': {
+      display: 'none',
+    },
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    flexBasis: '33.33%',
-    flexShrink: 0,
+  expanded: {
+    margin: 'auto',
   },
-  secondaryHeading: {
-    fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.text.secondary,
-  },
-});
+})(MuiExpansionPanel);
 
-class Servicios extends Component {
+const ExpansionPanelSummary = withStyles({
+  root: {
+    backgroundColor: 'rgba(0,0,0,.03)',
+    borderBottom: '1px solid rgba(0,0,0,.125)',
+    marginBottom: -1,
+    minHeight: 56,
+    '&$expanded': {
+      minHeight: 56,
+    },
+  },
+  content: {
+    '&$expanded': {
+      margin: '12px 0',
+    },
+  },
+  expanded: {},
+})(props => <MuiExpansionPanelSummary {...props} />);
+
+ExpansionPanelSummary.muiName = 'ExpansionPanelSummary';
+
+const ExpansionPanelDetails = withStyles(theme => ({
+  root: {
+    padding: theme.spacing.unit * 2,
+  },
+}))(MuiExpansionPanelDetails);
+
+class Servicios extends React.Component {
   state = {
     expanded: null,
   };
@@ -36,17 +65,16 @@ class Servicios extends Component {
   };
 
   render() {
-    const { classes } = this.props;
     const { expanded } = this.state;
 
     return (
-      <div className={classes.root}>
+      <div>
         <Jumbotron title="Servicios" description="A continuación se presentan 4 opciones de servicios profesionales que nuestra empresa puede ofrecer para cualquiera de los emprendimientos edilicios en Uruguay:"></Jumbotron>
-        <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
+        <ExpansionPanel square expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Estudios de prefactibilidad de emprendimientos edilicios:</Typography>
+            <Typography variant="subtitle1">Estudios de prefactibilidad de emprendimientos edilicios:</Typography>
           </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          <ExpansionPanelDetails  className="servicios-text">
             <Typography>
             Esta área incluye el asesoramiento desde el punto de vista técnico y económico de las posibilidades de implantación de un negocio de construcción.<br></br><br></br>
 Los servicios ofrecidos incluyen: <br></br><br></br>
@@ -60,9 +88,9 @@ Los servicios ofrecidos incluyen: <br></br><br></br>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Nacionalización de proyecto arquitectónico:</Typography>
+            <Typography variant="subtitle1">Nacionalización de proyecto arquitectónico:</Typography>
           </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          <ExpansionPanelDetails className="servicios-text">
             <Typography>
             Los servicios ofrecidos incluyen: <br></br><br></br>
             &#9679; Revisión total del proyecto recibido, actualizando los planos con terminología, materiales, normativa y nomenclatura habitual en Uruguay, emitiendo planos, planillas y memorias aptos para licitación. <br></br>
@@ -76,9 +104,9 @@ Los servicios ofrecidos incluyen: <br></br><br></br>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Dirección de obra:</Typography>
+            <Typography variant="subtitle1">Dirección de obra:</Typography>
           </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          <ExpansionPanelDetails  className="servicios-text">
             <Typography>
             Los servicios ofrecidos incluyen: <br></br><br></br>
             &#9679; Controlar efectivamente que se cumple con los recaudos, 
@@ -92,11 +120,11 @@ Los servicios ofrecidos incluyen: <br></br><br></br>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
-        <ExpansionPanel expanded={expanded === 'panel4'} onChange={this.handleChange('panel4')}>
+        <ExpansionPanel className="last-panel" expanded={expanded === 'panel4'} onChange={this.handleChange('panel4')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Servicios profesionales de owner's rep:</Typography>
+            <Typography variant="subtitle1">Servicios profesionales de owner's rep:</Typography>
           </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          <ExpansionPanelDetails  className="servicios-text">
             <Typography>
             Permiten controlar todos los procesos del emprendimiento, desde el diseño hasta la entrega del edificio, asegurando en todo momento que los intereses del propietario estén en el centro de todas las decisiones que se tomen. <br></br>
 De esta manera se evita mayores costos en el mediano plazo por pobres decisiones, que disminuyen notoriamente la rentabilidad del emprendimiento. <br></br>
@@ -119,7 +147,7 @@ Los servicios ofrecidos incluyen dos fases:<br></br><br></br>
 7. Aprobación de pagos de BPS (Leyes sociales del personal), emisión de etiquetas de código de barras web para presentación, emisión de boletos de pago. Planillas de control de gasto de Mano de Obra Imponible durante el proceso. <br></br>
 8. Contratación de subcontratos no incluidos en contrato de empresa principal, pedida de precios, comparativa, adjudicación, seguimiento de pagos. <br></br>
 9. Elaboración de informes periódicos referidos a la marcha de los trabajos.<br></br>
-10. Inspección de los trabajos, detectando y resolviendo conflictos<br></br>
+10. Inspección de los trabajos, detectando y resolviendo conflictos<br></br><br></br><br></br><br></br>
 
 
 
@@ -128,13 +156,10 @@ Los servicios ofrecidos incluyen dos fases:<br></br><br></br>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
+        <Bottom description="Por consultas: "></Bottom>
       </div>
     );
   }
 }
 
-Servicios.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Servicios);
+export default Servicios;

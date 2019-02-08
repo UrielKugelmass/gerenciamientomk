@@ -6,6 +6,7 @@ import QuienesSomos from './QuienesSomos';
 import Contacto from './Contacto';
 import Servicios from './Servicios';
 import Obras from './Obras';
+import ObrasInstance from './ObrasInstance';
 
 
 class App extends Component {
@@ -23,14 +24,8 @@ class App extends Component {
                     <Route path="/quienesSomos" component={QuienesSomos} />
                     <Route path="/contacto" component={Contacto} />
                     <Route path="/servicios" component={Servicios} />
+                    <Route path="/obras/:id" component={ObrasInstance} />
                     <Route path="/obras" component={Obras} />
-                    {/* <Route path="/news/:id" component={NewsInstance} />
-                    <Route path="/charities/:id" component={CharityInstance} />
-                    <Route path="/states/:name" component={StateInstance} />
-                    <Route path="/about" component={About} />
-                    <Route path="/news" component={News} />
-                    <Route path="/charities" component={Charities} />
-                    <Route path="/states" component={States} /> */}
                 </Switch>
               </div>
             </Router>

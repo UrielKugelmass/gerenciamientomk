@@ -1,0 +1,6 @@
+node_modules
+~$Imagenes editadas.pptx
+../package-lock.json
+../node_modules
+*package-lock*
+*node_modules*

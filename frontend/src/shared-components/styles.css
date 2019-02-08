@@ -62,8 +62,6 @@ ul{
 .card-img-top {
   margin-top: 20px;
   width: 100%!important;
-  height: 30%!important;
-  /* object-fit: contain; */
 }
 
 #developer-img {
@@ -76,7 +74,7 @@ ul{
 }
 
 body{
-  background-color: #121212 !important;
+  background-color: #ffffff !important;
 }
 
 .jumbotron{
@@ -99,6 +97,9 @@ body{
 }
 
 .card-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     color: #e2e2e2;
 }
 

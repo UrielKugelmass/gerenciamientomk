@@ -1,3 +1,16 @@
 .jumbotron{
     margin-bottom: 0px; 
 }
+
+.bottom-container>p>a, .bottom-container>p {
+    color: #e2e2e2;
+}
+
+.jumbotron.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius:0;
+    padding-top: 1em;
+    padding-bottom: .8em;
+}

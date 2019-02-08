@@ -6,75 +6,43 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import data from './ObrasData';
 import Jumbotron from './shared-components/Jumbotron';
+import Bottom from './shared-components/Bottom';
+import ObrasCard from './shared-components/ObrasCard';
 
-const styles = theme => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    flexWrap: 'nowrap',
-    margin: 'auto !important',
-    width: '50%',
-    height: '50%',
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: 'translateZ(0)',
-  },
-  titleBar: {
-    background:
-      'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-      'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-  },
-  icon: {
-    color: 'white',
-  },
-});
+import {obras_data} from './ObrasData';
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *     featured: true,
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
-function Obras(props) {
-  const { classes } = props;
-const test = './img/alo.jpg';
+class Obras extends React.Component {
+constructor(props) {
+  super(props);
 
-  return (
-    <div >
-    <Jumbotron title="Obras" description="Aquí se pueden ver algunos de nuestros clientes que confiaron en nuestros servicios:"></Jumbotron>
-      <GridList className="Obras" cellHeight={200} spacing={1} className={classes.gridList}>
-        {data.map((tile, index) => (
-          <GridListTile key={tile.img} cols={2} rows={2}>
-            <img src={(tile.img)} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              subtitle={tile.description}
-            />
-          </GridListTile>
-        ))}
-      </GridList>
-    </div>
-  );
+  this.state = {
+    data: obras_data
+  };
+
 }
-
-Obras.propTypes = {
-  classes: PropTypes.object.isRequired,
+render() {
+  let result = (
+    <>
+    <Jumbotron title="Obras" description="Aquí se pueden ver algunos de nuestros clientes que confiaron en nuestros servicios:"></Jumbotron>
+      <div className="album py-5 bg-light listingPage">
+        <div className="container">
+          <div className="row">
+            {this.state.data.map(obj => (
+              <ObrasCard
+                image={obj.img}
+                title={obj.title}
+                id={obj.id}
+                year={obj.year}
+                description={obj.description}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <Bottom description="Por consultas: "></Bottom>
+    </>
+  );
+  return result;
 };
-
-export default withStyles(styles)(Obras);
+}
+export default Obras;

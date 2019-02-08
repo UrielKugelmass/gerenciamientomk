@@ -6,15 +6,17 @@ import './Navbar.css'
 class CustomNavbar extends Component {
   render() {
     return (
-      <Navbar default collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-              <Image className="nav-img d-inline-block align-top" src={require('./../img/MK-logo.jpg')} alt="Second slide"/>
-              <Link className="company-name"to="/">MK Servicios De Ingeniería</Link>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Navbar>
-          <Nav pullRight>
+      <Navbar className="pages" default collapseOnSelect>
+        {/* <Navbar.Header> */}
+          {/* <Navbar> */}
+              {/* <Image className="column logo" src={require('./../img/MK-logo.jpg')} alt="Second slide"/> */}
+          {/* </Navbar> */}
+        {/* </Navbar.Header> */}
+        {/* <Navbar className="column pages"> */}
+          <Nav>
+            <NavItem>
+              <Image className="logo" src={require('./../img/MK-logo.jpg')} alt="Second slide"/>
+            </NavItem>
             <NavItem eventKey={1} className='navitem' componentClass={Link} href="/" to="/">
               Inicio
             </NavItem>
@@ -24,14 +26,16 @@ class CustomNavbar extends Component {
             <NavItem eventKey={3} className='navitem' componentClass={Link} href="/obras" to="/obras">
               Obras
             </NavItem>
-            <NavItem eventKey={4} className='navitem' componentClass={Link} href="/contacto" to="/contacto">
-              Contacto
-            </NavItem>
             <NavItem eventKey={5} className='navitem' componentClass={Link} href="/servicios" to="/servicios">
               Servicios
             </NavItem>
+            {/* <NavItem eventKey={4} className='navitem' componentClass={Link} href="/contacto" to="/contacto">
+              Contacto
+            </NavItem> */}
+            
+            
           </Nav>
-        </Navbar>
+        {/* </Navbar> */}
       </Navbar>
   );
   }
