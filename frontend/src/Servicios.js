@@ -104,7 +104,7 @@ Los servicios ofrecidos incluyen dos fases:<br></br><br></br>
 3. Seguimiento de planos conforme a obra <br></br>
 4. Seguimiento de manuales de usuario <br></br>
 5. Recepción definitiva de obra <br></br>
-6. Liberación de garantías de fiel cumplimiento de contrato <br></br>
+6. Liberación de garantías de fiel cumplimiento de contrato <br></br> 
 7. Entrega de informes finales al comitente con información de costos de obra, ahorros y sobrecostos. <br></br>
 
 
