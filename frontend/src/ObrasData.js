@@ -50,7 +50,7 @@ export const obras_data = [
     {
         img: require('./img/renner/renner-perspectiva.JPG'),
         title: 'Lojas Renner',
-        images: [require('./img/renner/renner-perspectiva.JPG'), require('./img/renner/renner-lateral.JPG'), require('./img/renner/renner.jpg'), require('./img/renner/renner-adentro.JPG')],
+        images: [require('./img/renner/renner-perspectiva.JPG'), require('./img/renner/renner-lateral.JPG'), require('./img/renner/renner2.png'), require('./img/renner/renner-adentro.JPG')],
         description: 'Dirección de obra y Owner´s Rep para proyecto de construcción de edificio para lojas Renner.',
         id: 7,
         year: 'Noviembre 2017'

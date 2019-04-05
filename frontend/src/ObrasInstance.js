@@ -54,7 +54,7 @@ render() {
   
   let result = (
     <>
-    <Jumbotron title={this.state.obra.title} description={this.getDescription(this.state.obra.year)}></Jumbotron>
+    {/* <Jumbotron title={this.state.obra.title} description={this.getDescription(this.state.obra.year)}></Jumbotron> */}
       <div className="image-gallery-container">
         <ImageGallery className="image-gallery"items={images} />
       </div>

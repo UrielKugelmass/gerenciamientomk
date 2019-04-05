@@ -14,3 +14,30 @@
     padding-top: 1em;
     padding-bottom: .8em;
 }
+
+.logo-bottom{
+display: block;
+  max-width:100px;
+  max-height:65px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.direccion {
+    /* width: 30%; */
+    text-align: left;
+    margin-left: -15px;
+    
+}
+
+.consultas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

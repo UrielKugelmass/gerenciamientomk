@@ -13,29 +13,29 @@ code {
     monospace;
 }
 
+
 .mk {
   color: #025253;
 }
 
 .image-gallery-image {
-  width: 70%;
-  height: 50%;
+  max-width: 64vw;
+  max-height: 64vh;
+  width: auto;
+  height: auto;
   display: block;
   margin: auto;
 }
 
 .image-gallery-image > span {
-  max-width: 70%;
-  max-width: 50%;
   position: relative !important;
   display: block;
   margin: auto;
-  max-width: 70%;
 }
 
 .image-gallery-image > img {
-  max-width: 70%;
-  max-height: 50%;
+  width: 70vw;
+  height: 75vh !important;
   height: auto;
   width: auto;
   display: block;

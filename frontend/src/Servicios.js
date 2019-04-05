@@ -70,58 +70,8 @@ class Servicios extends React.Component {
     return (
       <div>
         <Jumbotron title="Servicios" description="A continuación se presentan 4 opciones de servicios profesionales que nuestra empresa puede ofrecer para cualquiera de los emprendimientos edilicios en Uruguay:"></Jumbotron>
-        <ExpansionPanel square expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="subtitle1">Estudios de prefactibilidad de emprendimientos edilicios:</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails  className="servicios-text">
-            <Typography>
-            Esta área incluye el asesoramiento desde el punto de vista técnico y económico de las posibilidades de implantación de un negocio de construcción.<br></br><br></br>
-Los servicios ofrecidos incluyen: <br></br><br></br>
-&#9679; Estudio del terreno, análisis de posibilidades normativas respecto de alturas, m&sup2; construibles, factores de ocupación del suelo, etc. <br></br>
-&#9679; Estudio del programa planteado por el propietario y esquema de partido arquitectónico para determinar  m&sup2; por uso para el terreno en cuestión. <br></br>
-&#9679; Armado de planillas de áreas y estimado de costo de la construcción, incluyendo honorarios de las partes involucradas en el proyecto. <br></br>
-&#9679; Asesoramiento de gestiones previas, técnicas constructivas y plazos de obra. <br></br>
-
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="subtitle1">Nacionalización de proyecto arquitectónico:</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails className="servicios-text">
-            <Typography>
-            Los servicios ofrecidos incluyen: <br></br><br></br>
-            &#9679; Revisión total del proyecto recibido, actualizando los planos con terminología, materiales, normativa y nomenclatura habitual en Uruguay, emitiendo planos, planillas y memorias aptos para licitación. <br></br>
-            &#9679; Contratación de asesores locales, en Instalación Eléctrica, Sanitaria, Aire Acondicionado e Incendio. Se seguirá el proyecto de los asesores locales para cerrar proyectos ejecutivos compatibles con zonas de implantación y requerimientos de proyecto recibido.<br></br>
-            &#9679; Estudio de propuestas desde el punto de vista económico y disponibilidad en plaza para optimizar el proyecto desde el punto de vista económico.<br></br>
-            &#9679; Armado de pliegos y rubrados para licitación.<br></br>
-            &#9679; Gestiones ante organismos públicos para energía eléctrica, instalaciones mecánicas, agua, etc.<br></br>
-            &#9679; Firma técnica de técnico registrado en los organismos para gestiones.<br></br>
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="subtitle1">Dirección de obra:</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails  className="servicios-text">
-            <Typography>
-            Los servicios ofrecidos incluyen: <br></br><br></br>
-            &#9679; Controlar efectivamente que se cumple con los recaudos, 
-   planos, detalles, pliegos, memoria y reglas del arte del buen construir.<br></br>
-            &#9679; Seguimiento de cronograma de obra incorporado al contrato.<br></br>
-            &#9679; Control de avances físicos de obra para certificación mensual.<br></br>
-            &#9679; Coordinación de trabajos con propietarios.<br></br>
-            &#9679; Control de personal en obra, planillas de BPS.<br></br>
-            &#9679;  Control de seguridad en obra, seguimiento de solicitudes 
-                 del prevencionista de obra.<br></br> 
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel className="last-panel" expanded={expanded === 'panel4'} onChange={this.handleChange('panel4')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+        <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>        
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="subtitle1">Servicios profesionales de owner's rep:</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails  className="servicios-text">
@@ -147,12 +97,70 @@ Los servicios ofrecidos incluyen dos fases:<br></br><br></br>
 7. Aprobación de pagos de BPS (Leyes sociales del personal), emisión de etiquetas de código de barras web para presentación, emisión de boletos de pago. Planillas de control de gasto de Mano de Obra Imponible durante el proceso. <br></br>
 8. Contratación de subcontratos no incluidos en contrato de empresa principal, pedida de precios, comparativa, adjudicación, seguimiento de pagos. <br></br>
 9. Elaboración de informes periódicos referidos a la marcha de los trabajos.<br></br>
-10. Inspección de los trabajos, detectando y resolviendo conflictos<br></br><br></br><br></br><br></br>
+10. Inspección de los trabajos, detectando y resolviendo conflictos<br></br><br></br>
+<strong>C. Etapa de entrega al comitente</strong> <br></br>
+1. Seguimiento de Recepción Provisoria de obra <br></br>
+2. Seguimiento de levantamiento de observaciones <br></br>
+3. Seguimiento de planos conforme a obra <br></br>
+4. Seguimiento de manuales de usuario <br></br>
+5. Recepción definitiva de obra <br></br>
+6. Liberación de garantías de fiel cumplimiento de contrato <br></br>
+7. Entrega de informes finales al comitente con información de costos de obra, ahorros y sobrecostos. <br></br>
 
 
 
 
 
+            </Typography>
+          </ExpansionPanelDetails>
+          </ExpansionPanel>
+        <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
+          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="subtitle1">Estudios de prefactibilidad de emprendimientos edilicios:</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails  className="servicios-text">
+            <Typography>
+            Esta área incluye el asesoramiento desde el punto de vista técnico y económico de las posibilidades de implantación de un negocio de construcción.<br></br><br></br>
+Los servicios ofrecidos incluyen: <br></br><br></br>
+&#9679; Estudio del terreno, análisis de posibilidades normativas respecto de alturas, m&sup2; construibles, factores de ocupación del suelo, etc. <br></br>
+&#9679; Estudio del programa planteado por el propietario y esquema de partido arquitectónico para determinar  m&sup2; por uso para el terreno en cuestión. <br></br>
+&#9679; Armado de planillas de áreas y estimado de costo de la construcción, incluyendo honorarios de las partes involucradas en el proyecto. <br></br>
+&#9679; Asesoramiento de gestiones previas, técnicas constructivas y plazos de obra. <br></br>
+
+            </Typography>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+        <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
+          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="subtitle1">Nacionalización de proyecto arquitectónico:</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails className="servicios-text">
+            <Typography>
+            Los servicios ofrecidos incluyen: <br></br><br></br>
+            &#9679; Revisión total del proyecto recibido, actualizando los planos con terminología, materiales, normativa y nomenclatura habitual en Uruguay, emitiendo planos, planillas y memorias aptos para licitación. <br></br>
+            &#9679; Contratación de asesores locales, en Instalación Eléctrica, Sanitaria, Aire Acondicionado e Incendio. Se seguirá el proyecto de los asesores locales para cerrar proyectos ejecutivos compatibles con zonas de implantación y requerimientos de proyecto recibido.<br></br>
+            &#9679; Estudio de propuestas desde el punto de vista económico y disponibilidad en plaza para optimizar el proyecto desde el punto de vista económico.<br></br>
+            &#9679; Armado de pliegos y rubrados para licitación.<br></br>
+            &#9679; Gestiones ante organismos públicos para energía eléctrica, instalaciones mecánicas, agua, etc.<br></br>
+            &#9679; Firma técnica de técnico registrado en los organismos para gestiones.<br></br>
+            </Typography>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+        <ExpansionPanel className="last-panel" expanded={expanded === 'panel4'} onChange={this.handleChange('panel4')}>
+          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="subtitle1">Dirección de obra:</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails  className="servicios-text">
+            <Typography>
+            Los servicios ofrecidos incluyen: <br></br><br></br>
+            &#9679; Controlar efectivamente que se cumple con los recaudos, 
+   planos, detalles, pliegos, memoria y reglas del arte del buen construir.<br></br>
+            &#9679; Seguimiento de cronograma de obra incorporado al contrato.<br></br>
+            &#9679; Control de avances físicos de obra para certificación mensual.<br></br>
+            &#9679; Coordinación de trabajos con propietarios.<br></br>
+            &#9679; Control de personal en obra, planillas de BPS.<br></br>
+            &#9679;  Control de seguridad en obra, seguimiento de solicitudes 
+                 del prevencionista de obra.<br></br> 
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
