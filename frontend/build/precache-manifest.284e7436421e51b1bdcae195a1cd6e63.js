@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/estacionamiento-adentro.931d5ba4.JPG"
   },
   {
-    "revision": "9a2c8f89401184409922",
-    "url": "/static/css/main.2bdf2ddd.chunk.css"
+    "revision": "97a0585422db5be092c5",
+    "url": "/static/css/main.726f84d8.chunk.css"
   },
   {
     "revision": "a3c2750f90a99eb548694be1dbf64a9b",
@@ -96,8 +96,8 @@ self.__precacheManifest = [
     "url": "/static/media/punta-carretas.f2a4b398.JPG"
   },
   {
-    "revision": "9a2c8f89401184409922",
-    "url": "/static/js/main.9a2c8f89.chunk.js"
+    "revision": "97a0585422db5be092c5",
+    "url": "/static/js/main.97a05854.chunk.js"
   },
   {
     "revision": "5f01b89e7d3b23a2906503475ac33c67",
@@ -192,7 +192,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.04ad62ad.chunk.css"
   },
   {
-    "revision": "17060374ad0fcb87fc1515db8846d17c",
+    "revision": "2ae6925997284b961893d3f5e223dc52",
     "url": "/index.html"
   }
 ];
